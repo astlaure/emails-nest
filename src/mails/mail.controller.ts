@@ -1,13 +1,6 @@
-import {
-  Body,
-  Controller,
-  HttpCode,
-  InternalServerErrorException,
-  Post,
-} from '@nestjs/common';
-import { ValidationError } from 'yup';
+import { Body, Controller, HttpCode, Post } from '@nestjs/common';
 import { MailService } from './mail.service';
-import mailContextValidator from './validators/mail-context.validator';
+import { MailContextDto } from './models/mail-context.dto';
 
 @Controller('/mails')
 export class MailController {
@@ -15,18 +8,8 @@ export class MailController {
 
   @Post()
   @HttpCode(200)
-  async sendMail(@Body() body) {
-    try {
-      const data = await mailContextValidator.validate(body, {
-        abortEarly: false,
-      });
-      const { template, locale, ...rest } = data;
-      await this.mailService.sendEmail(template, locale, rest);
-    } catch (err) {
-      if (err instanceof ValidationError) {
-        return err.errors;
-      }
-      throw new InternalServerErrorException();
-    }
+  async sendMail(@Body() mailContext: MailContextDto) {
+    const { template, locale, ...rest } = mailContext;
+    await this.mailService.sendEmail(template, locale, rest);
   }
 }
