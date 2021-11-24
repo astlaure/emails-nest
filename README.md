@@ -71,3 +71,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Possible Changes
+
+1. Create a dto for each templates and manually validate it based on the template property in the body
+2. Create 2 enums for the templates and the locales
