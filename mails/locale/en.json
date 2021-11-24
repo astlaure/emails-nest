@@ -1,0 +1,9 @@
+{
+  "reset-password": {
+    "subject": "Reset Password",
+    "company_name": "Content Fortress",
+    "title": "Reset Password",
+    "paragraph": "Lorem ipsum dolor sit amet",
+    "call_action": "Reset Link"
+  }
+}

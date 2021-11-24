@@ -1,0 +1,22 @@
+POST http://localhost:3000/mails
+Content-Type: application/json
+
+{
+  "template": "reset-password",
+  "locale": "en",
+  "email": "test@request.io",
+  "button_url": "http://localhost:3000"
+}
+
+###
+
+POST http://localhost:3000/mails
+Content-Type: application/json
+
+{
+  "template": "reset-password",
+  "locale": "fr",
+  "button_url": "http://localhost:3000"
+}
+
+###

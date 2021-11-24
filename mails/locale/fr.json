@@ -1,0 +1,9 @@
+{
+  "reset-password": {
+    "subject": "Reinitialisez votre mot de passe",
+    "company_name": "Content Fortress",
+    "title": "Reinitialiser le mot de passe",
+    "paragraph": "Lorem ipsum dolor sit amet",
+    "call_action": "Reinitialiser"
+  }
+}
