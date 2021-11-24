@@ -1,9 +1,15 @@
 {
   "reset-password": {
     "subject": "Reinitialisez votre mot de passe",
-    "company_name": "Content Fortress",
+    "company_name": "My Awesome Project",
     "title": "Reinitialiser le mot de passe",
     "paragraph": "Lorem ipsum dolor sit amet",
     "call_action": "Reinitialiser"
+  },
+  "welcome": {
+    "subject": "Bienvenue",
+    "company_name": "My Awesome Project",
+    "title": "Bienvenue chez vous",
+    "paragraph": "Lorem ipsum dolor sit amet"
   }
 }

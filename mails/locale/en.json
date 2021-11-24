@@ -1,9 +1,15 @@
 {
   "reset-password": {
     "subject": "Reset Password",
-    "company_name": "Content Fortress",
+    "company_name": "My Awesome Project",
     "title": "Reset Password",
     "paragraph": "Lorem ipsum dolor sit amet",
     "call_action": "Reset Link"
+  },
+  "welcome": {
+    "subject": "Welcome",
+    "company_name": "My Awesome Project",
+    "title": "Welcome Home",
+    "paragraph": "Lorem ipsum dolor sit amet"
   }
 }

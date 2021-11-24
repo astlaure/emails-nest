@@ -1,0 +1,34 @@
+<mjml>
+  <mj-body>
+
+    <!-- Company Header -->
+    <mj-section background-color="#f0f0f0">
+      <mj-column>
+        <mj-text  font-style="italic"
+                  font-size="20px"
+                  align="center"
+                  color="#626262">
+          {{labels.company_name}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Introduction Text -->
+    <mj-section background-color="#fafafa" padding-top="80px" padding-bottom="80px">
+      <mj-column width="400px">
+
+        <mj-text font-style="italic"
+                 font-size="20px"
+                 font-family="Helvetica Neue"
+                 color="#626262"
+                 align="center">{{labels.title}}</mj-text>
+
+        <mj-text color="#525252" align="center" padding-top="40px" padding-bottom="40px">
+          {{labels.paragraph}}
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
